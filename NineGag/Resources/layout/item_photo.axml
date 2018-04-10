@@ -8,11 +8,31 @@
   <ffimageloading.cross.MvxCachedImageView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    local:MvxBind="ImagePath Url" />
+    local:MvxBind="ImagePath Url; Click VoteUpCommand" />
   
   <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     local:MvxBind="Text Url" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Likes" />
+
+    <Button 
+      android:id="@+id/VoteUpBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@mipmap/ic_keyboard_arrow_up_white_24dp"
+      local:MvxBind="Click VoteUpCommand"/>
+    
+    <Button 
+      android:id="@+id/VoteDownBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@mipmap/ic_keyboard_arrow_down_white_24dp"
+      local:MvxBind="Click VoteDownCommand"/>
+
 
 </LinearLayout>

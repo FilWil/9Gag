@@ -184,11 +184,17 @@ namespace NineGag
 			// aapt resource value: 0x7f060002
 			public const int MvxBindingTagUnique = 2131099650;
 			
+			// aapt resource value: 0x7f060004
+			public const int VoteDownBtn = 2131099652;
+			
+			// aapt resource value: 0x7f060003
+			public const int VoteUpBtn = 2131099651;
+			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f060003
-			public const int myButton = 2131099651;
+			// aapt resource value: 0x7f060005
+			public const int myButton = 2131099653;
 			
 			static Id()
 			{
@@ -229,7 +235,13 @@ namespace NineGag
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Icon = 2130903040;
+			public const int ic_keyboard_arrow_down_white_24dp = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int ic_keyboard_arrow_up_white_24dp = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Icon = 2130903042;
 			
 			static Mipmap()
 			{
