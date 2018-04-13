@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:local="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-  
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <!--Text view displaying image Url -->
   <ffimageloading.cross.MvxCachedImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    local:MvxBind="ImagePath Url; Click VoteUpCommand" />
-  
-  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    local:MvxBind="Text Url" />
-
-  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    local:MvxBind="Text Likes" />
-
-    <Button 
-      android:id="@+id/VoteUpBtn"
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:drawableLeft="@mipmap/ic_keyboard_arrow_up_white_24dp"
-      local:MvxBind="Click VoteUpCommand"/>
-    
-    <Button 
-      android:id="@+id/VoteDownBtn"
-      android:layout_width="wrap_content"
+      local:MvxBind="ImagePath Url; Click VoteUpCommand"
+      android:id="@+id/mvxCachedImageView1" />
+  <TextView
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:drawableLeft="@mipmap/ic_keyboard_arrow_down_white_24dp"
-      local:MvxBind="Click VoteDownCommand"/>
-
-
+      local:MvxBind="Text Url" />
+  <!-- Horizontal linear layout for likes imageButtons, comment section button and text view (likes display)-->
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/VoteUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_keyboard_arrow_up_white_24dp"        
+        android:background="@drawable/button_like_round"
+        local:MvxBind="Click VoteUpCommand" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        local:MvxBind="Text Likes" />
+    <ImageButton
+        android:id="@+id/VoteDownBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_keyboard_arrow_down_white_24dp"
+        android:background="@drawable/button_unlike_round"
+        local:MvxBind="Click VoteDownCommand" />
+  </LinearLayout>
 </LinearLayout>

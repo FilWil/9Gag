@@ -163,7 +163,13 @@ namespace NineGag
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int splash = 2130837504;
+			public const int button_like_round = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int button_unlike_round = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int splash = 2130837506;
 			
 			static Drawable()
 			{
@@ -184,17 +190,20 @@ namespace NineGag
 			// aapt resource value: 0x7f060002
 			public const int MvxBindingTagUnique = 2131099650;
 			
-			// aapt resource value: 0x7f060004
-			public const int VoteDownBtn = 2131099652;
+			// aapt resource value: 0x7f060005
+			public const int VoteDownBtn = 2131099653;
 			
-			// aapt resource value: 0x7f060003
-			public const int VoteUpBtn = 2131099651;
+			// aapt resource value: 0x7f060004
+			public const int VoteUpBtn = 2131099652;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f060005
-			public const int myButton = 2131099653;
+			// aapt resource value: 0x7f060003
+			public const int mvxCachedImageView1 = 2131099651;
+			
+			// aapt resource value: 0x7f060006
+			public const int myButton = 2131099654;
 			
 			static Id()
 			{
