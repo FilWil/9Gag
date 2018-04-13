@@ -166,10 +166,13 @@ namespace NineGag
 			public const int button_like_round = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int button_unlike_round = 2130837505;
+			public const int button_share_round = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int splash = 2130837506;
+			public const int button_unlike_round = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int splash = 2130837507;
 			
 			static Drawable()
 			{
@@ -184,11 +187,17 @@ namespace NineGag
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f060006
+			public const int CommentBtn = 2131099654;
+			
 			// aapt resource value: 0x7f060001
 			public const int MvvmCrossTagId = 2131099649;
 			
 			// aapt resource value: 0x7f060002
 			public const int MvxBindingTagUnique = 2131099650;
+			
+			// aapt resource value: 0x7f060007
+			public const int ShareBtn = 2131099655;
 			
 			// aapt resource value: 0x7f060005
 			public const int VoteDownBtn = 2131099653;
@@ -202,8 +211,8 @@ namespace NineGag
 			// aapt resource value: 0x7f060003
 			public const int mvxCachedImageView1 = 2131099651;
 			
-			// aapt resource value: 0x7f060006
-			public const int myButton = 2131099654;
+			// aapt resource value: 0x7f060008
+			public const int myButton = 2131099656;
 			
 			static Id()
 			{
@@ -219,16 +228,19 @@ namespace NineGag
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int item_photo = 2130968576;
+			public const int item_comment = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int Main = 2130968577;
+			public const int item_photo = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int MainView = 2130968578;
+			public const int Main = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int SplashScreen = 2130968579;
+			public const int MainView = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int SplashScreen = 2130968580;
 			
 			static Layout()
 			{
@@ -244,13 +256,22 @@ namespace NineGag
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int ic_keyboard_arrow_down_white_24dp = 2130903040;
+			public const int ic_comment_white_24dp = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int ic_keyboard_arrow_up_white_24dp = 2130903041;
+			public const int ic_keyboard_arrow_down_white_24dp = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Icon = 2130903042;
+			public const int ic_keyboard_arrow_up_white_24dp = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int ic_mode_comment_white_24dp = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int ic_share_white_24dp = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Icon = 2130903045;
 			
 			static Mipmap()
 			{

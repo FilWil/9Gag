@@ -4,42 +4,56 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-  <!--Text view displaying image Url -->
-  <ffimageloading.cross.MvxCachedImageView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      local:MvxBind="ImagePath Url; Click VoteUpCommand"
-      android:id="@+id/mvxCachedImageView1" />
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      local:MvxBind="Text Url" />
-  <!-- Horizontal linear layout for likes imageButtons, comment section button and text view (likes display)-->
-  <LinearLayout
-      android:orientation="horizontal"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-    <ImageButton
-        android:id="@+id/VoteUpBtn"
-        android:layout_width="wrap_content"
+<!--Text view displaying image Url -->
+    <ffimageloading.cross.MvxCachedImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@mipmap/ic_keyboard_arrow_up_white_24dp"        
-        android:background="@drawable/button_like_round"
-        local:MvxBind="Click VoteUpCommand" />
+        local:MvxBind="ImagePath Url; Click VoteUpCommand"
+        android:id="@+id/mvxCachedImageView1" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="20dp"
-        local:MvxBind="Text Likes" />
-    <ImageButton
-        android:id="@+id/VoteDownBtn"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@mipmap/ic_keyboard_arrow_down_white_24dp"
-        android:background="@drawable/button_unlike_round"
-        local:MvxBind="Click VoteDownCommand" />
-  </LinearLayout>
+        local:MvxBind="Text Url" />
+<!-- Horizontal linear layout for likes imageButtons, comment section button and text view (likes display)-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/VoteUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_keyboard_arrow_up_white_24dp"
+            android:background="@drawable/button_like_round"
+            local:MvxBind="Click VoteUpCommand" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            local:MvxBind="Text Likes" />
+        <ImageButton
+            android:id="@+id/VoteDownBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_keyboard_arrow_down_white_24dp"
+            android:background="@drawable/button_unlike_round"
+            local:MvxBind="Click VoteDownCommand" />
+        <ImageButton
+            android:id="@+id/CommentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_mode_comment_white_24dp"
+            android:background="@drawable/button_share_round" />
+        <ImageButton
+            android:id="@+id/ShareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_share_white_24dp"
+            android:background="@drawable/button_share_round" />
+    </LinearLayout>
 </LinearLayout>
