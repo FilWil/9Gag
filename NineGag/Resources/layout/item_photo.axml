@@ -8,7 +8,7 @@
     <ffimageloading.cross.MvxCachedImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        local:MvxBind="ImagePath Url; Click VoteUpCommand"
+        local:MvxBind="ImagePath Url;"
         android:id="@+id/mvxCachedImageView1" />
     <TextView
         android:layout_width="match_parent"
@@ -47,13 +47,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:src="@mipmap/ic_mode_comment_white_24dp"
-            android:background="@drawable/button_share_round" />
+            android:background="@drawable/button_share_round" 
+            local:MvxBind="Click GoCommentsCommand"/>
         <ImageButton
             android:id="@+id/ShareBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:src="@mipmap/ic_share_white_24dp"
-            android:background="@drawable/button_share_round" />
+            android:background="@drawable/button_share_round"/>
     </LinearLayout>
 </LinearLayout>

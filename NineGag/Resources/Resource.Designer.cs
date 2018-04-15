@@ -211,9 +211,6 @@ namespace NineGag
 			// aapt resource value: 0x7f060003
 			public const int mvxCachedImageView1 = 2131099651;
 			
-			// aapt resource value: 0x7f060008
-			public const int myButton = 2131099656;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -228,19 +225,16 @@ namespace NineGag
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int item_comment = 2130968576;
+			public const int CommentView = 2130968576;
 			
 			// aapt resource value: 0x7f040001
 			public const int item_photo = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int Main = 2130968578;
+			public const int MainView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int MainView = 2130968579;
-			
-			// aapt resource value: 0x7f040004
-			public const int SplashScreen = 2130968580;
+			public const int SplashScreen = 2130968579;
 			
 			static Layout()
 			{

@@ -5,46 +5,44 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using NineGag.Core.Annotations;
 
 namespace NineGag.Core.ViewModels
 {
-    public class Photo : INotifyPropertyChanged
+    public class CommentViewModel : MvxViewModel, INotifyPropertyChanged
     {
-        private int _likes;
+        #region Events
+        public new event PropertyChangedEventHandler PropertyChanged;
+        #endregion
 
-        public string Url { get; set; }
+        #region Variables
+        private int _points;
+        #endregion
 
-        public int Likes
+        #region Properties
+        public int Points
         {
-            get => _likes;
+            get => _points;
             set
             {
-                if (value == _likes) return;
-                _likes = value;
+                if (value == _points) return;
+                _points = value;
                 OnPropertyChanged();
             }
         }
+        #endregion
 
-        public void VoteUp()
-        {
-            Likes++;
-        }
-
-        public void VoteDown()
-        {
-            Likes--;
-        }
-
-        public IMvxCommand VoteUpCommand => new MvxCommand(VoteUp);
-        public IMvxCommand VoteDownCommand => new MvxCommand(VoteDown);
-        public event PropertyChangedEventHandler PropertyChanged;
+        #region Methods
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        #endregion
+
     }
 }
