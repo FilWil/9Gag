@@ -5,7 +5,7 @@ using MvvmCross.Droid.Views;
 
 namespace NineGag.Views
 {
-    [Activity(Label = "View for MainViewModel")]
+    [Activity(Label = "NineGag")]
     public class MainActivity : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

@@ -17,12 +17,14 @@ namespace NineGag.Core.ViewModels
                 new PhotoViewModel
                 {
                     Url = "https://www.cosslodkiego.com.pl/pol_pl_Coca-Cola-Vanilla-549_1.png",
-                    Likes = 0
+                    Likes = 0,
+                    CommentsCounter = 0
                 },
                 new PhotoViewModel
                 {
                     Url = "https://www.pepsi.com/en-us/uploads/images/can-pepsi.png",
-                    Likes = 0
+                    Likes = 0,
+                    CommentsCounter = 0
                 }
             };
         }

@@ -4,7 +4,7 @@ using MvvmCross.Droid.Views;
 
 namespace NineGag.Views
 {
-    [Activity(Label = "My Activity")]
+    [Activity(Label = "Comments")]
     public class CommentView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

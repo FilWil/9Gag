@@ -137,6 +137,22 @@ namespace NineGag
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int light_gray = 2131165184;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Dimension
 		{
 			
@@ -280,11 +296,11 @@ namespace NineGag
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080001
-			public const int app_name = 2131230721;
+			// aapt resource value: 0x7f090001
+			public const int app_name = 2131296257;
 			
-			// aapt resource value: 0x7f080000
-			public const int hello = 2131230720;
+			// aapt resource value: 0x7f090000
+			public const int hello = 2131296256;
 			
 			static String()
 			{
@@ -299,8 +315,8 @@ namespace NineGag
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int Theme_Splash = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int Theme_Splash = 2131230720;
 			
 			static Style()
 			{
