@@ -31,6 +31,8 @@ namespace NineGag.Core.ViewModels
         #region Properties
         public string Url { get; set; }
 
+        public int Id { get; set; }
+
         public int Likes
         {
             get => _likes;

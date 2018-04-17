@@ -13,6 +13,11 @@ namespace NineGag.Core.ViewModels
 {
     public class CommentViewModel : MvxViewModel, INotifyPropertyChanged
     {
+        public IMvxCommand SendCommentCommand => new MvxCommand(() =>
+        {
+
+        });
+        
         #region Events
         public new event PropertyChangedEventHandler PropertyChanged;
         #endregion

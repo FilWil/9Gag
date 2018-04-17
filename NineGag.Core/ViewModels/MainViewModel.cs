@@ -5,6 +5,7 @@ using System.Windows.Input;
 
 namespace NineGag.Core.ViewModels
 {
+ 
     public class MainViewModel : MvxViewModel
     {
         public MvxObservableCollection<PhotoViewModel> Photos { get; }
@@ -18,12 +19,14 @@ namespace NineGag.Core.ViewModels
                 {
                     Url = "https://www.cosslodkiego.com.pl/pol_pl_Coca-Cola-Vanilla-549_1.png",
                     Likes = 0,
+                    Id = 1,
                     CommentsCounter = 0
                 },
                 new PhotoViewModel
                 {
                     Url = "https://www.pepsi.com/en-us/uploads/images/can-pepsi.png",
                     Likes = 0,
+                    Id = 2,
                     CommentsCounter = 0
                 }
             };
@@ -37,4 +40,5 @@ namespace NineGag.Core.ViewModels
         }
 
     }
+
 }

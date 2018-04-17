@@ -203,8 +203,8 @@ namespace NineGag
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060006
-			public const int CommentBtn = 2131099654;
+			// aapt resource value: 0x7f060008
+			public const int CommentBtn = 2131099656;
 			
 			// aapt resource value: 0x7f060001
 			public const int MvvmCrossTagId = 2131099649;
@@ -212,20 +212,26 @@ namespace NineGag
 			// aapt resource value: 0x7f060002
 			public const int MvxBindingTagUnique = 2131099650;
 			
-			// aapt resource value: 0x7f060007
-			public const int ShareBtn = 2131099655;
+			// aapt resource value: 0x7f060009
+			public const int ShareBtn = 2131099657;
 			
-			// aapt resource value: 0x7f060005
-			public const int VoteDownBtn = 2131099653;
+			// aapt resource value: 0x7f060007
+			public const int VoteDownBtn = 2131099655;
+			
+			// aapt resource value: 0x7f060006
+			public const int VoteUpBtn = 2131099654;
 			
 			// aapt resource value: 0x7f060004
-			public const int VoteUpBtn = 2131099652;
+			public const int button_send = 2131099652;
+			
+			// aapt resource value: 0x7f060003
+			public const int edittext_comment = 2131099651;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f060003
-			public const int mvxCachedImageView1 = 2131099651;
+			// aapt resource value: 0x7f060005
+			public const int mvxCachedImageView1 = 2131099653;
 			
 			static Id()
 			{
