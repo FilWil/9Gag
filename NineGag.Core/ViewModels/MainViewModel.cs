@@ -2,27 +2,32 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using System.Windows.Input;
+using NineGag.Core.Models;
 
 namespace NineGag.Core.ViewModels
 {
  
-    public class MainViewModel : MvxViewModel
+    public class MainViewModel : BaseViewModel<string>
     {
-        public MvxObservableCollection<PhotoViewModel> Photos { get; }
-        public MvxObservableCollection<CommentViewModel> Comments { get; }
+        public MvxObservableCollection<Photo> Photos { get; }
+
+        public IMvxCommand PhotoSelectedCommand => new MvxCommand<Photo>(photo =>
+            {
+                this.Navigate<PhotoDetailsViewModel, PhotoId>(new PhotoId {Id = photo.Id});
+            });
 
         public MainViewModel()
         {
-            Photos = new MvxObservableCollection<PhotoViewModel>
+            Photos = new MvxObservableCollection<Photo>
             {
-                new PhotoViewModel
+                new Photo
                 {
                     Url = "https://www.cosslodkiego.com.pl/pol_pl_Coca-Cola-Vanilla-549_1.png",
                     Likes = 0,
                     Id = 1,
                     CommentsCounter = 0
                 },
-                new PhotoViewModel
+                new Photo
                 {
                     Url = "https://www.pepsi.com/en-us/uploads/images/can-pepsi.png",
                     Likes = 0,
@@ -32,6 +37,8 @@ namespace NineGag.Core.ViewModels
             };
         }
 
+
+
         public override Task Initialize()
         {
             //TODO: Add starting logic here
@@ -39,6 +46,10 @@ namespace NineGag.Core.ViewModels
             return base.Initialize();
         }
 
+        public override void Prepare(string parameter)
+        {
+            
+        }
     }
 
 }

@@ -9,9 +9,9 @@ using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using NineGag.Core.Annotations;
 
-namespace NineGag.Core.ViewModels
+namespace NineGag.Core.Models
 {
-    public class CommentViewModel : MvxViewModel, INotifyPropertyChanged
+    public class Comment : MvxViewModel, INotifyPropertyChanged
     {
         public IMvxCommand SendCommentCommand => new MvxCommand(() =>
         {
@@ -27,6 +27,11 @@ namespace NineGag.Core.ViewModels
         #endregion
 
         #region Properties
+
+        public int Id { get; set; }
+
+        public User Author { get; set; }
+
         public int Points
         {
             get => _points;
@@ -37,6 +42,12 @@ namespace NineGag.Core.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public string Content { get; set; }
+
+        public DateTimeOffset PostDate { get; set; }
+
+
         #endregion
 
         #region Methods

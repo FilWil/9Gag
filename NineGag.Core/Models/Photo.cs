@@ -1,26 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using NineGag.Core.Annotations;
 
-namespace NineGag.Core.ViewModels
+namespace NineGag.Core.Models
 {
-    public class PhotoViewModel : MvxViewModel, INotifyPropertyChanged
+    public class Photo : BindableObject
     {
         #region Commands
         public IMvxCommand VoteUpCommand => new MvxCommand(VoteUp);
-        public IMvxCommand VoteDownCommand => new MvxCommand(VoteDown);
-        public IMvxCommand GoCommentsCommand => new MvxCommand(() => ShowViewModel<CommentViewModel>());
-        #endregion
-
-        #region Events
-        public new event PropertyChangedEventHandler PropertyChanged;
+        public IMvxCommand VoteDownCommand => new MvxCommand(VoteDown);        
         #endregion
 
         #region Variables
@@ -66,13 +55,7 @@ namespace NineGag.Core.ViewModels
         {
             Likes--;
         }
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
+        #endregion  
 
     }
 }

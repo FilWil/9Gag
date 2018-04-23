@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                xmlns:app="http://schemas.android.com/apk/res-auto"             
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
     <mvvmcross.droid.support.v7.recyclerview.MvxRecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" 
+        app:MvxItemTemplate="@layout/item_comment"
+        app:MvxBind="ItemsSource Comments"/>
     <EditText
         android:id="@+id/edittext_comment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Write comment"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/button_send" />
+        android:layout_toLeftOf="@+id/button_send" 
+        app:MvxBind="Text NewComment"/>
     <Button
         android:id="@+id/button_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Send"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        app:MvxBind="Click SendCommentCommand"/>
 </RelativeLayout>
